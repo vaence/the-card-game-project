@@ -1,0 +1,105 @@
+@import url(./fonts/style.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Stratos LC Web';
+}
+
+body {
+    height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    background-color: aliceblue;
+}
+
+.container {
+    width: 1024px;
+    height: 774px;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    background-color: #004980; 
+}
+
+.levels__box {
+    width: 480px;
+    height: 460px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #C2F5FF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    &_text {
+        font-size: 40px;
+        color: #004980;
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+
+.levels__box_form label {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    font-size: 64px;
+    color: #0080C1;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover { background-color: lightskyblue; color: white;}
+
+}
+
+.levels {
+    display: none;
+}
+
+
+.levels__numbers {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-bottom: 67px;
+    margin-top: 50px;
+}
+
+.button__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+
+    &_btn {
+        width: 246px;
+        height: 50px;
+        border-radius: 10px;
+        background: #7AC100;
+        border-radius: 12px;
+        font-family: inherit;
+        color: white;
+        font-size: 24px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            background: #93e900;
+        }
+    }
+}
