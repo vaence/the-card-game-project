@@ -1,0 +1,32 @@
+{
+  "name": "game-project",
+  "version": "1.0.0",
+  "description": "Это учебный проект модуля \"Инструменты разработки\"",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -p 3001",
+    "format": "prettier --write .",
+    "lint:css": "stylelint './src/**.css'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaence/the-card-game-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vaence/the-card-game-project/issues"
+  },
+  "homepage": "https://github.com/vaence/the-card-game-project#readme",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "stylelint": "^14.12.1"
+  }
+}

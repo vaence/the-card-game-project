@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable prettier/prettier */
 const form = document.querySelector('.form');
 const button = document.querySelector('.button');
 const levels = Array.from(document.querySelectorAll('.level'));
@@ -28,8 +30,8 @@ for (let j = 0; j < numbers.length; j++) {
         })
 
         nextSiblings.forEach(sibling => {
-            if (sibling.classList.contains('star__checked')) {
-                sibling.classList.remove('star__checked');
+            if (sibling.classList.contains('number__chosen')) {
+                sibling.classList.remove('number__chosen');
             };
         })
     })
@@ -51,39 +53,19 @@ function getAllNextSiblings(element){
     return result;
 }
 
-//--- валидация и сбор значений
-function getFieldValue(fieldElement) {
-    const controls = fieldElement.querySelectorAll('.field__control');
-
-    if (controls.length === 1) {  
-        const control = controls[0];
-        const key = control.name;
-        const value = control.value;
-        return { [key] : value };  
-    }
-
-    for (const control of controls) {
-        const key = control.name;
-        if (control.checked) {
-            return { [key] : control.value };                 
-        }
-    }
-
-    const key = controls[0].name;
-    return { [key] : undefined };
-};
-
 //--- валидация формы выбора уровня
 form.addEventListener('submit', function(event) { 
     const formTarget = event.target;
 
     const fields = formTarget.querySelectorAll('.form__field');
 
+    // eslint-disable-next-line prettier/prettier
     let result = {};  
 
     fields.forEach(field => {
         result = {
             ...result,
+            // eslint-disable-next-line no-undef
             ...getFieldValue(field),
         };
     });
@@ -95,7 +77,3 @@ form.addEventListener('submit', function(event) {
         console.log(result);
     }
 });
-
-
-
-
