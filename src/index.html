@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose a level</title>
+</head>
+<body>
+    <div class="container">
+        <div class="levels__box">
+            <div class="levels__box_text">Выбери <br> сложность:</div>
+            <form class="form levels__box_form" action="gamescreen.html" method="" name="levels-form" novalidate>
+            <div class="form__field levels__wrapper">
+                    <input class="level field__control" type="radio" id="one" name="level" value="3" required>
+                    <input class="level field__control" type="radio" id="two" name="level" value="6" required>
+                    <input class="level field__control" type="radio" id="three" name="level" value="9" required>
+            </div>
+            <div class="levels__numbers">
+                    <label for="one" class="number"><div class="number_btn">1</div></label>
+                    <label for="two" class="number"><div class="number_btn">2</div></label>
+                    <label for="three" class="number"><div class="number_btn">3</div></label>
+            </div>
+            <div class="button__wrapper">
+                <button class="button button__wrapper_btn">Старт</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
